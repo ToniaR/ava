@@ -1,0 +1,61 @@
+<template>
+  <button :class="classes" @click="method">{{ label }}</button>
+</template>
+
+<script>
+export default {
+  name: 'BaseButton',
+  props: {
+    type: {
+      type: String,
+      default: 'default'
+    },
+    label: {
+      type: String
+    },
+    method: {
+      type: Function
+    }
+  },
+  computed: {
+    classes() {
+      return `button button--${this.type}`;
+    }
+  },
+  mounted() {
+
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.button {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 100%;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font: {
+    size: $font-size-default;
+    weight: $font-weight-default;
+    family: $font-family-default;
+  }
+}
+
+
+.button--default {
+  background-image: linear-gradient(to right, $royal-blue, $purple-heart);
+  color: $white;
+  border-radius: 5px;
+}
+
+.button--rounded {
+  background:  $white;
+  color: $stratos;
+  border-radius: 25px;
+}
+
+</style>
