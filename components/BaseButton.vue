@@ -38,10 +38,15 @@ export default {
   line-height: 100%;
   border: none;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all .5s ease-in-out;
   font: {
     size: $font-size-default;
     weight: $font-weight-default;
     family: $font-family-default;
+  }
+  
+  &:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -56,6 +61,11 @@ export default {
   background:  $white;
   color: $stratos;
   border-radius: 25px;
+  font-weight: $font-weight-medium;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 </style>

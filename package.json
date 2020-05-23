@@ -12,17 +12,19 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
     "file-loader": "^6.0.0",
-    "jest": "^24.1.0",
+    "jest": "^24.9.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "url-loader": "^4.1.0",
-    "vue-jest": "^4.0.0-0"
+    "vue-jest": "^4.0.0-0",
+    "vue-svg-loader": "^0.16.0"
   }
 }

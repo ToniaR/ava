@@ -41,7 +41,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    'nuxt-svg-loader'
   ],
   styleResources: {
     scss: [
@@ -56,6 +57,14 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+    }
+  },
+  // Your loader options as svgLoader object
+  svgLoader: {
+    svgoConfig: {
+      plugins: [
+        { prefixIds: false } // Disables prefixing for SVG IDs
+      ]
     }
   }
 }

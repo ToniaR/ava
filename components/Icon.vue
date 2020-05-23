@@ -1,6 +1,7 @@
 <template>
   <div class="icon icon-wrapper">
-      <img :src="iconSrc" :alt="title" class="icon__img"/>
+      <img src="/vue.svg" :alt="title" class="icon__img"/>
+      <!-- <img :src="iconSrc" :alt="title" class="icon__img"/> -->
       <h4 class="icon__label">{{ label }}</h4>
   </div>
 </template>
@@ -22,7 +23,7 @@ export default {
   },
   computed: {
     iconSrc() {
-      return `${require(`@/assets/img/${this.imageTitle}.svg`)}`;
+      return `${require(`/${this.imageTitle}.svg`)}`;
     } 
   },
   watch: {
