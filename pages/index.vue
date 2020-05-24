@@ -35,11 +35,13 @@ body {
 }
 
 #portfolio {
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem 0;
 }
 
 #skills {
-  height: auto;
+  min-height: calc(100vh - 500px);
+  padding: 2rem 0;
 }
+
 </style>

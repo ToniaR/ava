@@ -16,7 +16,7 @@
           <div class="header-section__content">
             <navigation :links="navLinks" class="nav"/>
             <section class="content__hero">
-              <base-hero title="Hi, I'm Tonya!" subtitle="Front-end developer & designer" :isUnique="true"></base-hero>
+              <base-hero title="Hi, I'm Tonya!" subtitle="Front-end developer with passion to web-design" :isUnique="true"></base-hero>
               
             
               <base-button link="mailto: antaninareznik@gmail.com" label="Get in touch"></base-button>
@@ -142,14 +142,21 @@ header {
     width: 500px;
     height: 500px;
     position: absolute;
-    top: 30%;
+    top: 40%;
     right: 60%;
     transform: translateX(60%);
     z-index: 4;
 
     @media screen and (max-width: 768px) {
-      width: 100%;
       top: 60%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }    
+
+    @media screen and (max-width: 1250px) {
+      top: 50%;
     }
   }
 }

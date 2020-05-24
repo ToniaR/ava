@@ -32,13 +32,16 @@ export default {
   cursor: pointer;
   text-align: center;
   transition: all 200ms ease-in;
+  background: transparent;
+  display: inline-block;
   font: {
     size: $font-size-default;
     weight: $font-weight-default;
   }
+  transition: all .3s ease-in;
 
   &:hover {
-    font-weight: $font-weight-medium;
+    color: $purple-heart;
   }
 }
 </style>
