@@ -13,9 +13,9 @@ export default {
   display: block;
   width: 20px;
   height: 40px;
-  border: 2px solid white;
+  border: 2px solid $royal-blue;
   position: absolute;
-  top: 110%;
+  top: 92vh;
   left: 50%;
   transform: translateX(-50%);
   margin: 0 auto;
@@ -30,7 +30,7 @@ export default {
     width: 5px;
     height: 5px;
     border-radius: 20px;
-    background: white;
+    background: $royal-blue;
     position: absolute;
     bottom: 5px;
     left: 0;

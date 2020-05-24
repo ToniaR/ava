@@ -8,6 +8,11 @@
       <icon label="SCSS/SASS" title="sass"/>
       <icon label="Vue.js" title="vue"/>
     </div>
+    <div class="skills__copy">
+      <p>Also I've worked with <strong>Firebase, Jest, BEM, LESS, Coffee Script</strong>.</p>
+      <p> I've worked with tools such as <strong>    Adobe XD, Illustrator, Photoshop, Inkscape</strong></p>
+  
+    </div>
   </section>
 </template>
 

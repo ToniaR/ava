@@ -2,9 +2,16 @@
   <div>
     <header>
       <section class="header-section">
-          <svg class="header-section__curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7C25C6" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,117.3C960,96,1200,96,1320,96L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+          <!-- <svg class="header-section__curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7C25C6" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,117.3C960,96,1200,96,1320,96L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg> -->
           <svg class="header-section__wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 920">
             <path fill="white" fill-opacity="0.95" d="M 0 350 Q 100 450 200 400 C 300 350 300 450 400 500 C 550 550 600 350 600 250 Q 600 200 650 200 Q 800 200 750 0 L 0 0 Z"></path>
+          </svg>
+          <svg  class="header-section__curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1440 320">
+            <path fill="#7C25C6" fill-opacity="1" 
+            d="M0,224L34.3,208C68.6,192,137,160,206,176C274.3,192,343,256,411,261.3C480,267,549,213,617,176C685.7,
+            139,754,117,823,138.7C891.4,160,960,224,1029,250.7C1097.1,277,1166,267,1234,250.7C1302.9,235,1371,213,
+            1406,202.7L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,
+            0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
           </svg>
           <div class="header-section__content">
             <navigation :links="navLinks" class="nav"/>
