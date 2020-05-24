@@ -68,7 +68,10 @@ export default {
       ]
     }
   },
+  generate: {
+    fallback: true
+  },
   router: {
-    base: '/<repository-name>/'
+    base: '/toniareznik/'
   }
 }
