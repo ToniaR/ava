@@ -77,9 +77,8 @@ export default {
   data() {
     return {
       navLinks: [
-        { label: 'Portfolio', res: '/portfolio' },
-        { label: 'Skills', res: '/skills'},
-        { label: 'Contact', res: '/contact'} 
+        { label: 'Portfolio', res: '#portfolio' },
+        { label: 'Skills', res: '#skills'}
       ]
     }
   }

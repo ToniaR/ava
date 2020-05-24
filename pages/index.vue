@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <my-works-section/>
-    <skills-section/>
+    <my-works-section id="portfolio"/>
+    <skills-section id="skills"/>
   </div>
 </template>
 
@@ -32,5 +32,14 @@ body {
 
 .container {
   @include container;
+}
+
+#portfolio {
+  height: 100vh;
+  padding: 2rem 0;
+}
+
+#skills {
+  height: auto;
 }
 </style>
