@@ -1,5 +1,5 @@
 <template>
-  <button :class="classes" @click="method"><span>{{ label }}</span></button>
+  <a :href="link" :class="classes" @click="method"><span>{{ label }}</span></a>
 </template>
 
 <script>
@@ -15,6 +15,10 @@ export default {
     },
     method: {
       type: Function
+    },
+    link: {
+      type: String,
+      required: true
     }
   },
   computed: {
@@ -41,6 +45,10 @@ export default {
   transition: all .5s ease-in-out;
   border-radius: 5px;
   border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font: {
     size: $font-size-default;
     weight: $font-weight-default;

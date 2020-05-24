@@ -10,9 +10,9 @@
             <navigation :links="navLinks" class="nav"/>
             <section class="content__hero">
               <base-hero title="Hi, I'm Tonya!" subtitle="Front-end developer & designer" :isUnique="true"></base-hero>
-              <a href = "mailto: antaninareznik@gmail.com">
-                <base-button label="Get in touch"></base-button>
-              </a>
+            
+              <base-button link="mailto: antaninareznik@gmail.com" label="Get in touch"></base-button>
+              
             </section>
             <img src="/character-me.svg" alt="character" class="header-section__image"/>
           </div>
@@ -35,10 +35,9 @@
       </svg>
       <section class="footer__content">
 
-        <a href = "mailto: antaninareznik@gmail.com">
-          <base-button label="Contact me" type="footer" class="footer__content-btn"></base-button>
-        </a>
 
+        <base-button link="mailto: antaninareznik@gmail.com" label="Contact me" type="footer" class="footer__content-btn"></base-button>
+      
 
         <div class="footer__content-icons">
           <a href="http://github.com/ToniaR" target="_blank" rel=”noreferrer”>
