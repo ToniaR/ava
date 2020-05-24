@@ -22,26 +22,27 @@ export default {
   height: 30px;
   margin-left: -2rem;
   margin-top: 3rem;
+
+  &__link {
+    width: 100px;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: $stratos;
+    cursor: pointer;
+    text-align: center;
+    transition: all 200ms ease-in;
+    background: transparent;
+    display: inline-block;
+    font: {
+      size: $font-size-default;
+      weight: $font-weight-default;
+    }
+    transition: all .3s ease-in;
+
+    &:hover {
+      color: $purple-heart;
+    }
+  }
 }
 
-.nav-wrapper__link {
-  width: 100px;
-  margin-right: 1rem;
-  text-decoration: none;
-  color: $stratos;
-  cursor: pointer;
-  text-align: center;
-  transition: all 200ms ease-in;
-  background: transparent;
-  display: inline-block;
-  font: {
-    size: $font-size-default;
-    weight: $font-weight-default;
-  }
-  transition: all .3s ease-in;
-
-  &:hover {
-    color: $purple-heart;
-  }
-}
 </style>

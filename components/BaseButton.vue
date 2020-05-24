@@ -68,13 +68,7 @@ export default {
 
 .button--rounded {
   background:  $white;
-  // & > span {
-  //   background: linear-gradient(to right, $royal-blue, $purple-heart);
-  //   -webkit-background-clip: text;
-  //   -webkit-text-fill-color: transparent;
-  // }
   color: $stratos;
-  // border-radius: 25px;
   font-weight: $font-weight-medium;
   
   &:hover {
@@ -90,7 +84,6 @@ export default {
     -webkit-text-fill-color: transparent;
   }
   color: $stratos;
-  // border-radius: 25px;
   font-weight: $font-weight-medium;
   
   &:hover {

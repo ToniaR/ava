@@ -58,7 +58,7 @@ export default {
 
 
 h2.base-hero__title {
-    margin: 0rem 0;
+  margin: 0rem 0;
 }
 </style>>
 

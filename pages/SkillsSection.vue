@@ -32,25 +32,28 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.skills__icons-wrapper {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 2rem auto;
+
+.skills {
+  &__icons-wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+  }
+
+  &__tag {
+    min-width: 100px;
+    max-width: fit-content;
+    background: $stratos;
+    color: $white;
+    display: inline-block;
+  }  
 }
 
 .skills-section__title {
   @include section-title;
-}
-
-.skills__tag {
-  min-width: 100px;
-  max-width: fit-content;
-  background: $stratos;
-  color: $white;
-  display: inline-block;
 }
 
 </style>

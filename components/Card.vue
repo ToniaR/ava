@@ -40,18 +40,17 @@ export default {
     width: 90%;
     margin: 0 auto;
   }
-}
 
-.card--rose {
-  background-color: $french-lilac;
-}
+  &--rose {
+    background-color: $french-lilac;
+  }
 
-.card--blue {
-  background-color: $malibu;
-}
+  &--blue {
+    background-color: $malibu;
+  }
 
-
-.card--violet {
-  background-color: $portage;
+  &--violet {
+    background-color: $portage;
+  }
 }
 </style>

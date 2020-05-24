@@ -2,7 +2,6 @@
   <div>
     <header>
       <section class="header-section">
-          <!-- <svg class="header-section__curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7C25C6" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,117.3C960,96,1200,96,1320,96L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg> -->
           <svg class="header-section__wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 920">
             <path fill="white" fill-opacity="0.95" d="M 0 350 Q 100 450 200 400 C 300 350 300 450 400 500 C 550 550 600 350 600 250 Q 600 200 650 200 Q 800 200 750 0 L 0 0 Z"></path>
           </svg>
@@ -17,10 +16,7 @@
             <navigation :links="navLinks" class="nav"/>
             <section class="content__hero">
               <base-hero title="Hi, I'm Tonya!" subtitle="Front-end developer with passion to web-design" :isUnique="true"></base-hero>
-              
-            
               <base-button link="mailto: antaninareznik@gmail.com" label="Get in touch"></base-button>
-              
             </section>
             <img src="/character-me.svg" alt="character" class="header-section__image"/>
           </div>
@@ -58,7 +54,6 @@
         <p class="footer__content-copyright">&copy; 2020 Antanina Reznikava</p>
       </section>
     </footer>
-    <!-- <scroll-top-button></scroll-top-button> -->
   </div>
 </template>
 <script>
@@ -67,7 +62,6 @@ import BaseHero from '~/components/BaseHero.vue';
 import BaseButton from '~/components/BaseButton.vue';
 import ScrollButton from '~/components/ScrollButton.vue';
 import Icon from '~/components/Icon.vue';
-import ScrollTopButton from '~/components/ScrollTopButton.vue';
 
 export default {
   components:{
@@ -75,8 +69,7 @@ export default {
     BaseHero,
     BaseButton,
     ScrollButton,
-    Icon,
-    ScrollTopButton
+    Icon
   },
   data() {
     return {
@@ -172,16 +165,14 @@ footer {
   position: relative;
   height: 400px;
   color: $white;
+
+  &> svg{
+    position: absolute;
+    bottom: -4px;
+    z-index: 1;
+    height: 130%;
+  }
 }
-
-
-footer > svg{
-  position: absolute;
-  bottom: -4px;
-  z-index: 1;
-  height: 130%;
-}
-
 
 .footer__content {
   position: absolute;

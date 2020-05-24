@@ -1,10 +1,7 @@
 <template>
   <section class="my-works-section">
-    
     <base-hero title="My works"  class="my-works__title"></base-hero> 
-
     <div class="my-works__wrapper">
-
       <card color="blue">
         <a href="http://www.haluchastudio.pl/" target="blank" class="my-works__card-link">
           <h3>Haluhastudio.pl</h3>
@@ -17,7 +14,6 @@
           <base-button type="rounded" label="See the project"/>
         </a>
       </card>
-
       <card color="rose">
         <a href="https://toniar.github.io/capabilities-creator/" target="blank" class="my-works__card-link">
           <h3>Capabilities creator"</h3>
@@ -30,7 +26,6 @@
           <base-button type="rounded" label="See the project"/>
         </a>
       </card>
-
       <card color="blue">
         <a href="http://www.blisko.co/" target="blank" class="my-works__card-link">
           <h3>Blisko.co</h3> 
@@ -43,7 +38,6 @@
           <base-button type="rounded" label="See the project"/>
         </a>
       </card>    
-
       <card color="violet">
         <a href="http://www.sisms.pl/" target="blank" class="my-works__card-link">
           <h3>SiSMS.pl</h3>
@@ -56,9 +50,7 @@
           <base-button type="rounded" label="See the project"/>
         </a>
       </card>            
-
     </div>
-
   </section>
 </template>
 
@@ -89,47 +81,48 @@ export default {
 
 <style scoped lang="scss">
 
-.my-works__title {
-  @include section-title;
-}
+.my-works {
+  &__title {
+    @include section-title;
+  }
 
 
+  &__card-description {
+    color: $grey;
+    width: 100%;
+    text-align: left;
+  }
 
-.my-works__card-description {
-  color: $grey;
-  width: 100%;
-  text-align: left;
-}
+  &__card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 1rem;
+  }
 
-.my-works__card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 0 1rem;
-}
+  &__card-link {
+    text-decoration: none;
+    color: $white;
 
-.my-works__card-link {
-  text-decoration: none;
-  color: $white;
-
-  & > h3{
-    margin: 0;
-    font: {
-      family: $font-family-accent;
-      size: calc(#{$font-size-medium} - 10px);
-      weight: $font-weight-medium;
+    & > h3{
+      margin: 0;
+      font: {
+        family: $font-family-accent;
+        size: calc(#{$font-size-medium} - 10px);
+        weight: $font-weight-medium;
+      }
     }
   }
-}
 
-.my-works__wrapper {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 1.5rem;
-  padding: 1rem 0 2rem;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 1.5rem;
+    padding: 1rem 0 2rem;
 
-  @media screen and (min-width: 992px) {
-    grid-template-columns: 1fr 1fr;
+    @media screen and (min-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 </style>

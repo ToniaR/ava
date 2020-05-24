@@ -22,9 +22,6 @@ export default {
         behavior: 'smooth'
 
       })
-
-       
-      // document.querySelector('#portfolio').scrollIntoView({behavior: 'smooth'});
     }
   }
 }

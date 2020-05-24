@@ -17,14 +17,6 @@ export default {
         top: pageHeight,
         behavior: 'smooth'
       });
-
-      location.href += '#portfolio';
-
-
-
-
-       
-      // document.querySelector('#portfolio').scrollIntoView({behavior: 'smooth'});
     }
   }
 }
