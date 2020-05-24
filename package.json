@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.12.2",
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {

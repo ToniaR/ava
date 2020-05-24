@@ -56,6 +56,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+   publicPath: 'public/',
     extend (config, ctx) {
     }
   },
@@ -66,5 +67,8 @@ export default {
         { prefixIds: false } // Disables prefixing for SVG IDs
       ]
     }
+  },
+  router: {
+    base: '/<repository-name>/'
   }
 }
