@@ -1,10 +1,32 @@
 <template>
-  <div class="button-scroll"></div>
+  <button class="button-scroll" @click="onScrollDown()"></button>
 </template>
 
 <script>
 export default {
+  name: 'ScrollButton',
+  props: {
+    methodChandler:{
+      type: Function
+    }
+  },
+  methods: {
+    onScrollDown() {
+      let pageHeight = window.innerHeight;
+      window.scrollBy({
+        top: pageHeight,
+        behavior: 'smooth'
+      });
 
+      location.href += '#portfolio';
+
+
+
+
+       
+      // document.querySelector('#portfolio').scrollIntoView({behavior: 'smooth'});
+    }
+  }
 }
 </script>
 
@@ -23,6 +45,7 @@ export default {
   border-radius: 10px;
   cursor: pointer;
   transition: all .4s ease-in;
+  outline: none;
 
   &:after {
     display: block;

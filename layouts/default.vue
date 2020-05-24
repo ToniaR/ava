@@ -17,13 +17,14 @@
             <navigation :links="navLinks" class="nav"/>
             <section class="content__hero">
               <base-hero title="Hi, I'm Tonya!" subtitle="Front-end developer & designer" :isUnique="true"></base-hero>
+              
             
               <base-button link="mailto: antaninareznik@gmail.com" label="Get in touch"></base-button>
               
             </section>
             <img src="/character-me.svg" alt="character" class="header-section__image"/>
           </div>
-         <scroll-button></scroll-button>
+          <scroll-button></scroll-button>
       </section>
     </header>
     <nuxt />
@@ -57,6 +58,7 @@
         <p class="footer__content-copyright">&copy; 2020 Antanina Reznikava</p>
       </section>
     </footer>
+    <!-- <scroll-top-button></scroll-top-button> -->
   </div>
 </template>
 <script>
@@ -65,6 +67,7 @@ import BaseHero from '~/components/BaseHero.vue';
 import BaseButton from '~/components/BaseButton.vue';
 import ScrollButton from '~/components/ScrollButton.vue';
 import Icon from '~/components/Icon.vue';
+import ScrollTopButton from '~/components/ScrollTopButton.vue';
 
 export default {
   components:{
@@ -72,7 +75,8 @@ export default {
     BaseHero,
     BaseButton,
     ScrollButton,
-    Icon
+    Icon,
+    ScrollTopButton
   },
   data() {
     return {
@@ -113,6 +117,7 @@ header {
     top: 0;
     left: 0;
     z-index: 2;
+    width: 1680px;
   }
 
   &__curve {
@@ -141,6 +146,11 @@ header {
     right: 60%;
     transform: translateX(60%);
     z-index: 4;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      top: 60%;
+    }
   }
 }
 
@@ -162,6 +172,7 @@ footer > svg{
   position: absolute;
   bottom: -4px;
   z-index: 1;
+  height: 130%;
 }
 
 

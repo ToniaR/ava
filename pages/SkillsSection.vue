@@ -8,23 +8,25 @@
       <icon label="SCSS/SASS" title="sass"/>
       <icon label="Vue.js" title="vue"/>
     </div>
-    <div class="skills__copy">
-      <p>Also I've worked with <strong>Firebase, Jest, BEM, LESS, Coffee Script</strong>.</p>
-      <p> I've worked with tools such as <strong>    Adobe XD, Illustrator, Photoshop, Inkscape</strong></p>
-  
-    </div>
   </section>
 </template>
 
 <script>
 import BaseHero from '~/components/BaseHero.vue';
 import Icon from '~/components/Icon.vue';
+import Tag from '~/components/Tag.vue';
 
 export default {
   name: 'SkillsSection',
   components: {
     BaseHero,
-    Icon
+    Icon,
+    Tag
+  },
+  data() {
+    return {
+      skillsTags: ['firebase', 'less', 'bem', 'Adobe XD', 'Adobe Illustrator', 'Photoshop', 'Inkscape']
+    }
   }
 }
 </script>
@@ -41,6 +43,14 @@ export default {
 
 .skills-section__title {
   @include section-title;
+}
+
+.skills__tag {
+  min-width: 100px;
+  max-width: fit-content;
+  background: $stratos;
+  color: $white;
+  display: inline-block;
 }
 
 </style>

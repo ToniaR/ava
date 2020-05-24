@@ -34,6 +34,12 @@ export default {
   background-color: $royal-blue;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  @media screen and (max-width: 768px) {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .card--rose {
