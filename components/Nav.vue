@@ -21,6 +21,7 @@ export default {
   flex-direction: row;
   height: 30px;
   margin-left: -2rem;
+  margin-top: 3rem;
 }
 
 .nav-wrapper__link {

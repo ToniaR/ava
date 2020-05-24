@@ -27,9 +27,10 @@ export default {
   background: rgba(255, 255, 255, 0.4);
   color: $stratos;
   font: {
-    size: $font-size-default;
-    weight: $font-weight-medium;
+    size: calc(#{$font-size-default} - 2px);
+    weight: $font-weight-default;
   }
+  line-height: 21px;
 }
 
 </style>

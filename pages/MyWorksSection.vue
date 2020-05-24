@@ -7,7 +7,7 @@
 
       <card color="blue">
         <a href="http://www.haluchastudio.pl/" target="blank" class="my-works__card-link">
-        <base-hero title="Haluhastudio.pl" class="white-text"></base-hero> 
+          <h3>Haluhastudio.pl</h3>
         </a>
         <p class="my-works__card-description">Landing page for architectural studio</p>
         <div class="my-works__card-tags">
@@ -20,7 +20,7 @@
 
       <card color="rose">
         <a href="https://toniar.github.io/capabilities-creator/" target="blank" class="my-works__card-link">
-        <base-hero title="Capabilities creator" class="white-text"></base-hero> 
+          <h3>Capabilities creator"</h3>
         </a>
         <p class="my-works__card-description">Tool for generating code samples for testing.</p>
         <div class="my-works__card-tags">
@@ -33,7 +33,7 @@
 
       <card color="blue">
         <a href="http://www.blisko.co/" target="blank" class="my-works__card-link">
-        <base-hero title="Blisko.co" class="white-text"></base-hero> 
+          <h3>Blisko.co</h3> 
         </a>
         <p class="my-works__card-description">Creating landing page for application "Blisko".</p>
         <div class="my-works__card-tags">
@@ -46,7 +46,7 @@
 
       <card color="violet">
         <a href="http://www.sisms.pl/" target="blank" class="my-works__card-link">
-        <base-hero title="SiSMS.pl" class="white-text"></base-hero> 
+          <h3>SiSMS.pl</h3>
         </a>
         <p class="my-works__card-description">Rewriting landing page "Sisms.pl".</p>
         <div class="my-works__card-tags">
@@ -89,12 +89,6 @@ export default {
 
 <style scoped lang="scss">
 
-.white-text{
-  color: $white;
-  margin: 0;
-}
-
-
 .my-works__title {
   @include section-title;
 }
@@ -111,11 +105,21 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 1rem 0 2rem;
+  margin: 0 0 1rem;
 }
 
 .my-works__card-link {
   text-decoration: none;
+  color: $white;
+
+  & > h3{
+    margin: 0;
+    font: {
+      family: $font-family-accent;
+      size: calc(#{$font-size-medium} - 10px);
+      weight: $font-weight-medium;
+    }
+  }
 }
 
 .my-works__wrapper {
