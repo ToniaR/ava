@@ -3,8 +3,8 @@
     <base-hero title="Skills" class="skills-section__title"/>
     <div class="skills__icons-wrapper">
       <icon label="HTML" title="html"/>
-      <icon label="CSS" title="css"/>
       <icon label="JavaScript" title="js"/>
+      <icon label="CSS" title="css"/>
       <icon label="SCSS/SASS" title="sass"/>
       <icon label="Vue.js" title="vue"/>
     </div>

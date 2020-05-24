@@ -1,8 +1,8 @@
 <template>
   <div class="icon icon-wrapper">
-      <img src="/vue.svg" :alt="title" class="icon__img"/>
+      <img :src="`/${title}.svg`" :alt="title" class="icon__img"/>
       <!-- <img :src="iconSrc" :alt="title" class="icon__img"/> -->
-      <h4 class="icon__label">{{ label }}</h4>
+      <h4 class="icon__label" v-show="label !== ''">{{ label }}</h4>
   </div>
 </template>
 

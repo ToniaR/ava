@@ -10,8 +10,9 @@
             <navigation :links="navLinks" class="nav"/>
             <section class="content__hero">
               <base-hero title="Hi, I'm Tonya!" subtitle="Front-end developer & designer" :isUnique="true"></base-hero>
-              <base-button label="Get in touch"></base-button>
-
+              <a href = "mailto: antaninareznik@gmail.com">
+                <base-button label="Get in touch"></base-button>
+              </a>
             </section>
             <img src="/character-me.svg" alt="character" class="header-section__image"/>
           </div>
@@ -20,14 +21,35 @@
     </header>
     <nuxt />
     <footer>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#0099ff" fill-opacity="1" 
-        d="M0,96L16,96C32,96,64,96,96,122.7C128,149,160,203,192,
-        197.3C224,192,256,128,288,122.7C320,117,352,171,384,208C416,245,448,267,480,240C512,
-        213,544,139,576,133.3C608,128,640,192,672,186.7C704,181,736,107,768,69.3C800,32,832,
-        32,864,58.7C896,85,928,139,960,138.7C992,139,1024,85,1056,101.3C1088,117,1120,203,1152,
-        218.7C1184,235,1216,181,1248,170.7C1280,160,1312,192,1344,170.7C1376,149,1408,75,1424,37.3L1440,0L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 320">
+        <defs>
+          <linearGradient id="gradient">
+            <stop offset="5%" stop-color="#533DE2" />
+            <stop offset="95%" stop-color="#7C25C6" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#gradient)" fill-opacity="1" 
+        d="M0,32L48,64C96,96,192,160,288,181.3C384,203,480,181,576,149.3C672,117,768,75,864,90.7C960,107,1056,181,1152,208C1248,235,
+        1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,
+        320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
       </svg>
+      <section class="footer__content">
+
+        <a href = "mailto: antaninareznik@gmail.com">
+          <base-button label="Contact me" type="footer" class="footer__content-btn"></base-button>
+        </a>
+
+
+        <div class="footer__content-icons">
+          <a href="http://github.com/ToniaR" target="_blank" rel=”noreferrer”>
+            <icon title="github" class="footer__content-icon"/>
+          </a>
+          <a href="https://www.linkedin.com/in/antanina-reznikava-206a4411a/" target="_blank" rel=”noreferrer”>
+            <icon title="linkedin" class="footer__content-icon"/>
+          </a>
+        </div>
+        <p class="footer__content-copyright">&copy; 2020 Antanina Reznikava</p>
+      </section>
     </footer>
   </div>
 </template>
@@ -36,13 +58,15 @@ import Navigation from '~/components/Nav.vue';
 import BaseHero from '~/components/BaseHero.vue';
 import BaseButton from '~/components/BaseButton.vue';
 import ScrollButton from '~/components/ScrollButton.vue';
+import Icon from '~/components/Icon.vue';
 
 export default {
   components:{
     Navigation,
     BaseHero,
     BaseButton,
-    ScrollButton
+    ScrollButton,
+    Icon
   },
   data() {
     return {
@@ -120,5 +144,53 @@ header {
 }
 .nav {
   padding: 1rem;
+}
+
+footer {
+  position: relative;
+  height: 400px;
+  color: $white;
+}
+
+
+footer > svg{
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+}
+
+
+.footer__content {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+
+  &-copyright {
+    margin-bottom: 2rem;
+    font-weight: $font-weight-thin;
+  }
+
+  &-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-icon {
+    width: 20px;
+    height: 20px;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &-btn {
+    margin: 2rem 0;
+  }
+
 }
 </style>

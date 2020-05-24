@@ -1,5 +1,5 @@
 <template>
-  <button :class="classes" @click="method">{{ label }}</button>
+  <button :class="classes" @click="method"><span>{{ label }}</span></button>
 </template>
 
 <script>
@@ -39,6 +39,8 @@ export default {
   border: none;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all .5s ease-in-out;
+  border-radius: 5px;
+  border: none;
   font: {
     size: $font-size-default;
     weight: $font-weight-default;
@@ -54,18 +56,39 @@ export default {
 .button--default {
   background-image: linear-gradient(to right, $royal-blue, $purple-heart);
   color: $white;
-  border-radius: 5px;
 }
 
 .button--rounded {
   background:  $white;
+  // & > span {
+  //   background: linear-gradient(to right, $royal-blue, $purple-heart);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  // }
   color: $stratos;
-  border-radius: 25px;
+  // border-radius: 25px;
   font-weight: $font-weight-medium;
   
   &:hover {
     transform: scale(1.1);
   }
+}
+
+.button--footer {
+  background:  $white;
+  & > span {
+    background: linear-gradient(to right, $royal-blue, $purple-heart);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  color: $stratos;
+  // border-radius: 25px;
+  font-weight: $font-weight-medium;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+
 }
 
 </style>
