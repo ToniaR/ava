@@ -20,7 +20,7 @@
             </section>
             <img src="character-me.svg" alt="character" class="header-section__image"/>
           </div>
-          <button class="button-scroll" @click="onScrollDown()"></button>
+          <!-- <button class="button-scroll" @click="onScrollDown()"></button> -->
       </section>
     </header>
     <nuxt />
