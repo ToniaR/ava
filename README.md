@@ -1,6 +1,6 @@
-# toniareznik
+# tReznik
 
-> portfolio page
+> My legendary Nuxt.js project
 
 ## Build Setup
 

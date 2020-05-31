@@ -1,18 +1,18 @@
 {
-  "name": "toniareznik",
+  "name": "tReznik",
   "version": "1.0.0",
-  "description": "portfolio page",
-  "author": "ToniaR",
+  "description": "My legendary Nuxt.js project",
+  "author": "Tonia",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "test": "jest"
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.12.2",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "nuxt": "^2.0.0",
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {

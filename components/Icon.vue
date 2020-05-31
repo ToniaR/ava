@@ -1,6 +1,6 @@
 <template>
-  <div class="icon icon-wrapper">
-      <img :src="`/${title}.svg`" :alt="title" class="icon__img"/>
+  <div class="icon icon-wrapper" :style="`width:${widthSize}px; height:${heightSize}px;`">
+      <img :src="`./${title}.svg`" :alt="title" class="icon__img" :style="`width:${widthSize}px; height:${heightSize}px;`"/>
       <h4 class="icon__label" v-show="label !== ''">{{ label }}</h4>
   </div>
 </template>
@@ -13,6 +13,12 @@ export default {
     },
     title: {
       type: String 
+    },
+    widthSize: {
+      type: Number
+    },
+    heightSize: {
+      type: Number
     }
   },
   data() {

@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" :class="classes" @click="method"><span>{{ label }}</span></a>
+  <a :href="link" :class="classes" target="_blank" rel="noreferrer"><span>{{ label }}</span></a>
 </template>
 
 <script>
@@ -13,12 +13,8 @@ export default {
     label: {
       type: String
     },
-    method: {
-      type: Function
-    },
     link: {
-      type: String,
-      required: true
+      type: String
     }
   },
   computed: {

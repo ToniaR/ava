@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -25,7 +25,6 @@ export default {
   ** Global CSS
   */
   css: [
-
   ],
   /*
   ** Plugins to load before mounting the App
@@ -56,11 +55,9 @@ export default {
     /*
     ** You can extend webpack config here
     */
-   publicPath: 'public/',
     extend (config, ctx) {
     }
-  },
-  // Your loader options as svgLoader object
+  },  
   svgLoader: {
     svgoConfig: {
       plugins: [
@@ -69,9 +66,6 @@ export default {
     }
   },
   generate: {
-    fallback: true
-  },
-  router: {
-    base: '/toniareznik/'
+    subFolders: true
   }
 }

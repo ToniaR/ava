@@ -28,6 +28,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font-family-default;
+  overflow-x: hidden;
 }
 
 .container {

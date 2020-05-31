@@ -9,10 +9,8 @@
         <p class="my-works__card-description">Landing page for architectural studio</p>
         <div class="my-works__card-tags">
           <tag v-for="tag in tags[0]" :key="tag" :label="tag"/>
-        </div>      
-        <a href="http://www.haluchastudio.pl/" target="blank" class="my-works__card-link">
-          <base-button type="rounded" label="See the project"/>
-        </a>
+        </div>
+        <base-button link="http://www.haluchastudio.pl/" type="rounded" label="See the project"/>
       </card>
       <card color="rose">
         <a href="https://toniar.github.io/capabilities-creator/" target="blank" class="my-works__card-link">
@@ -21,10 +19,8 @@
         <p class="my-works__card-description">Tool for generating code samples for testing.</p>
         <div class="my-works__card-tags">
           <tag v-for="tag in tags[1]" :key="tag" :label="tag"/>
-        </div>      
-        <a href="https://toniar.github.io/capabilities-creator/" target="blank" class="my-works__card-link">
-          <base-button type="rounded" label="See the project"/>
-        </a>
+        </div>
+        <base-button link="https://toniar.github.io/capabilities-creator/" type="rounded" label="See the project"/>
       </card>
       <card color="blue">
         <a href="http://www.blisko.co/" target="blank" class="my-works__card-link">
@@ -33,10 +29,8 @@
         <p class="my-works__card-description">Creating landing page for application "Blisko".</p>
         <div class="my-works__card-tags">
           <tag v-for="tag in tags[2]" :key="tag" :label="tag"/>
-        </div>      
-        <a href="http://www.haluchastudio.pl/" target="blank" class="my-works__card-link">
-          <base-button type="rounded" label="See the project"/>
-        </a>
+        </div>
+        <base-button link="http://www.blisko.co" type="rounded" label="See the project"/>
       </card>    
       <card color="violet">
         <a href="http://www.sisms.pl/" target="blank" class="my-works__card-link">
@@ -45,10 +39,8 @@
         <p class="my-works__card-description">Rewriting landing page "Sisms.pl".</p>
         <div class="my-works__card-tags">
           <tag v-for="tag in tags[2]" :key="tag" :label="tag"/>
-        </div>      
-        <a href="http://www.sisms.pl/" target="blank" class="my-works__card-link">
-          <base-button type="rounded" label="See the project"/>
-        </a>
+        </div>
+        <base-button link="http://www.sisms.pl/" type="rounded" label="See the project"/>
       </card>            
     </div>
   </section>
