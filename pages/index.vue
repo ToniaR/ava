@@ -41,8 +41,9 @@ body {
 }
 
 #skills {
-  min-height: calc(100vh - 500px);
-  padding: 2rem 0;
+  max-height: calc(100vh - 500px);
+  height: 100%;
+  margin-top: 2rem;
 }
 
 </style>
