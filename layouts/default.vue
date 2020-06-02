@@ -93,6 +93,10 @@ header {
   height: 100vh;
 }
 
+body {
+  scroll-behavior: smooth; 
+}
+
 .header-section {
   width: 100vw;
   height: 100vh;
