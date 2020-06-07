@@ -1,0 +1,24 @@
+
+.skills {
+  &__icons-wrapper {
+    width: 70%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+  }
+
+  &__tag {
+    min-width: 100px;
+    max-width: fit-content;
+    background: $stratos;
+    color: $white;
+    display: inline-block;
+  }  
+}
+
+.skills-section__title {
+  @include section-title;
+}

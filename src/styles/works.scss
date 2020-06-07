@@ -1,0 +1,69 @@
+
+.my-works {
+  &__title {
+    @include section-title;
+  }
+
+
+  &__card-description {
+    color: $grey;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+  }
+
+  &__card-link {
+    text-decoration: none;
+    color: $white;
+
+    & > h3{
+      margin: 0;
+      font: {
+        family: $font-family-accent;
+        size: calc(#{$font-size-medium} - 10px);
+        weight: $font-weight-medium;
+      }
+    }
+  }
+
+  &__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 1.5rem;
+    padding: 1rem 0 2rem;
+
+    @media screen and (min-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.toggle-nav-wrapper {
+  width: 100%;
+  max-width: 500px;
+  height: 3rem;
+  margin: 0 auto;
+}
+
+.toggle-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+
+  & > li {
+    height: 20px;
+    list-style: none;
+    padding: 0 1rem;
+    border: 2px solid $malibu;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}

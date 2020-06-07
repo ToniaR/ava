@@ -1,0 +1,258 @@
+@import './base/breakpoints.scss';
+@import './base/colors.scss';
+@import './base/mixins.scss';
+@import './base/typography.scss';
+@import './base/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+@import './components/button.scss';
+@import './components/hero.scss';
+@import './components/input.scss';
+@import './components/card.scss';
+@import './components/icon.scss';
+@import './components/logo.scss';
+@import './components/nav.scss';
+@import './components/tag.scss';
+
+@import './works.scss';
+@import './skills.scss';
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-default;
+  overflow-x: hidden;
+}
+
+.container {
+  @include container;
+}
+
+#portfolio {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+#skills {
+  min-height: calc(100vh - 500px);
+  height: 100%;
+  margin-top: 2rem;
+
+  @media screen and (min-width: 1024px) {
+    min-height: calc(100vh - 400px);
+
+  }
+}
+
+//header & footer
+
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  scroll-behavior: smooth; 
+}
+
+.header-section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(30deg, $purple-heart 30%, $royal-blue 70%);
+
+  &__wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 1680px;
+  }
+
+  &__curve {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+  }
+
+  &__image {
+    max-width: 550px;
+    max-height: 550px;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    transform: translateX(60%);
+    z-index: 4;
+
+    @media screen and (max-width: 768px) {
+      top: 50%;
+      left: 0;
+      transform: translateX(0%);
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 400px;
+      max-height: 400px;
+    }    
+
+    @media screen and (min-width: 1025px) and (max-width: 1250px) {
+      top: 40%;
+    }
+  }
+}
+
+.content__hero {
+  margin-top: 2rem;
+}
+.nav {
+  padding: 1rem;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  height: 500px;
+  color: $white;
+  background: linear-gradient(0deg, $purple-heart, $royal-blue);
+
+  @media screen and (max-width: 1024px) {
+    height: 400px;
+  }
+
+
+  &> svg{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+  }
+}
+
+.footer__content {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+
+  &-copyright {
+    margin-bottom: 2rem;
+    font-weight: $font-weight-thin;
+  }
+
+  &-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-icon > .icon__img{
+    width: 20px;
+    height: 20px;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &-btn {
+    margin: 2rem 0;
+  }
+
+}
+
+.button-scroll {
+  display: block;
+  width: 20px;
+  height: 40px;
+  border: 2px solid $royal-blue;
+  position: absolute;
+  top: 92vh;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  z-index: 10;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .4s ease-in;
+  outline: none;
+
+  &:after {
+    display: block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 20px;
+    background: $royal-blue;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+
+  &:before {
+    display: block;
+    content: '';
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// scroll top btn
+.button-scroll-top {
+  opacity: 0;
+  position: fixed;
+  z-index: 20000;
+  right: 2rem;
+  bottom: 0;
+  background: $stratos;
+  width: 40px;
+  height: 40px;
+  border-radius: 31px 31px 0 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: 0;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    border: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid $white;
+    border-right: 2px solid $white;
+    transform: rotate(-45deg);
+    margin: 5px auto 0;
+  }
+
+  &--visible {
+    opacity: 1;
+  }
+}

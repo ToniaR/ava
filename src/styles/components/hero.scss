@@ -1,0 +1,31 @@
+.base__hero {
+  color: $stratos;
+}
+
+.base-hero__title {
+  font: {
+    family: $font-family-accent;
+    weight: $font-weight-medium;
+    size: $font-size-medium;
+  }
+}
+
+.base-hero__title--large {
+  margin: 0;
+  font-size: $font-size-large;
+}
+
+
+.base-hero__subtitle {
+  font: {
+    family: $font-family-default;
+    weight: $font-weight-thin;
+    size: calc(#{$font-size-default} * 1.5);
+  }
+
+}
+
+
+h2.base-hero__title {
+  margin: 0rem 0;
+}
