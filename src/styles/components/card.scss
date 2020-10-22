@@ -1,16 +1,18 @@
 
 .card {
+  position: relative;
   width: 500px;
-  height: auto;
+  min-height: 230px;
+  // min-height: 400px;
   padding: 2rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: $royal-blue;
+  background-color: $white;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 3px 5px 12px rgba(203, 203, 203, 0.6);
 
   @media screen and (max-width: 768px) {
     max-width: 500px;

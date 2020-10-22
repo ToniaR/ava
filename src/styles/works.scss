@@ -37,7 +37,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     padding: 1rem 0 2rem;
 
     @media screen and (min-width: 992px) {
@@ -67,3 +67,71 @@
     cursor: pointer;
   }
 }
+
+// new
+.work__hero-image {
+  width: 100%;
+  height: 40%;
+  background: url('/../img/halucha-studio.png') center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 9px 9px 0 0;
+
+  &--sisms {
+    background: url('/../img/sisms.png') center center no-repeat;
+    background-size: cover;
+  }
+
+  &--blisko {
+    background: url('/../img/blisko.png') center center no-repeat;
+    background-size: cover;
+  }  
+  &--cc {
+    background: url('/../img/cc.png') top center no-repeat;
+    background-size: cover;
+  }
+}
+
+.work__content {
+  // height: 50%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+
+  a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  h3 {
+    font-family: $font-family-default;
+    font-size: $font-size-default;
+    font-weight: $font-weight-thin;
+    color: black;
+    letter-spacing: 1px;
+  }
+  p {
+    font-weight: 700;
+    font-size: 29px;
+  }
+  span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+.work__link {
+  height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: none;
+  background-image: linear-gradient(to right, #533DE2, #7C25C6);
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 1rem 0;
+}
+
