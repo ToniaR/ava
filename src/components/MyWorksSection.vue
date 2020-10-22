@@ -1,8 +1,6 @@
 <template>
   <section class="my-works-section">
     <base-hero title="My works"  class="my-works__title"></base-hero> 
-
-    <toggle-nav></toggle-nav>
     <div class="my-works__wrapper">
       <card color="blue">
         <a href="http://www.haluchastudio.pl/" target="blank" class="my-works__card-link">
